@@ -106,7 +106,7 @@ token0         : WBNB
 Reserve WBNB   : 20,194,632,450,524,216,126 (20.19 WBNB)
 Reserve SAS    : 209,893,079,634,451,319,291,830,870 (~209.89M SAS)
 sellBurn       : 0
-Moolah WBNB    : 383,252 WBNB (flash loan pool)
+Moolah WBNB    : 383,252 WBNB (flashloan pool)
 ```
 
 ---
