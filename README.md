@@ -122,6 +122,8 @@ Moolah WBNB    : 383,252 WBNB (flash loan pool)
 
 ---
 
+<img width="565" height="368" alt="image" src="https://github.com/user-attachments/assets/ce496026-d3d7-40ff-8b40-1982abe92314" />
+
 ## Exec flow
 
 ```
