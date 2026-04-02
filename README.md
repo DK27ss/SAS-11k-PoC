@@ -58,7 +58,7 @@ function _burnFromPair(uint256 amount) internal {
 }
 ```
 
-Triggered on any non-sell `transfer()` when `sellBurn > 0`. Burns tokens directly from the pair and forces reserve update via `sync()`.
+Triggered on any non-sell `transfer()` when `sellBurn > 0`, burns tokens directly from the pair and forces reserve update via `sync()`.
 
 ### V4 - `transferFrom()` not overridden
 
@@ -71,7 +71,7 @@ function transferFrom(address from, address to, uint256 amount) public virtual o
 }
 ```
 
-`transfer()` is overridden with custom logic. `transferFrom()` remains standard ERC20. Complete bypass: 0% fee, no anti-bot, no sellWhitelist, no sellBurn accumulation.
+`transfer()` is overridden with custom logic. `transferFrom()` remains standard ERC20, complete bypass, no anti-bot, no sellWhitelist, no sellBurn accumulation.
 
 ### V5 - `_isBuy()` returns false for contracts
 
@@ -81,7 +81,7 @@ function _isBuy(address from, address to) internal view returns (bool) {
 }
 ```
 
-for a contract recipient (`_isContract(to) = true`), `_isBuy` returns `false`. No `buyWhitelist` check and no buy fee applied.
+for a contract recipient (`_isContract(to) = true`), `_isBuy` returns `false`, no `buyWhitelist` check and no buy fee applied.
 
 ---
 
