@@ -111,11 +111,10 @@ Moolah WBNB    : 383,252 WBNB (flashloan pool)
 
 ---
 
-4 contracts, deployed and executed within a single atomic transaction
+3 contracts, deployed and executed within a single atomic transaction
 
 | Contract | Role | Vulnerability |
 |----------|------|---------------|
-| `SASExploitV2` | Factory: flash loan, orchestration, profit routing | - |
 | `SellWorker` | Deployed in constructor: sells SAS via `_autoSell` | V1 + V2 |
 | `BurnWorker` | Deployed in constructor: self-transfer triggers burn | V1 + V3 |
 | `SwapHelper` | Sells remaining SAS via `transferFrom` + Router | V4 |
